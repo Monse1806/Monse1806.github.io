@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020b1c">
+  <meta name="description" content="Portafolio de Monse Medina, estudiante de Ingeniería en Software en la Universidad Técnica de Ambato.">
+  <title>Monse Medina | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">
+        <span class="logo-mark">M<span class="gradient-text">.</span></span>
+        <span>Monse Medina</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"><img src="img/monse.png" alt=""></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="status-pill">Ingeniería en Software · UTA Ecuador 🇪🇨</div>
+          <h1>Hola, soy <span class="name"><span class="gradient-text">Monse Medina</span><span class="heart">♡</span></span></h1>
+          <p class="hero-description">
+            Estudiante de cuarto semestre apasionada por el desarrollo de software,
+            la lógica de programación y la creación de soluciones eficientes.
+          </p>
+          <div class="typing-line"><span id="typingText">Aprendiendo desarrollo de software</span><span class="cursor"></span></div>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary"><i class="fa-solid fa-code"></i> Ver Proyectos <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="https://github.com/Monse1806" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Monse1806" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:dmedina5341@uta.edu.ec" aria-label="Enviar correo"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        </div>
+      <a href="#sobre-mi" class="scroll-note">Descubre mi mundo <i class="fa-solid fa-arrow-down"></i></a>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <img class="about-image" src="img/mi-foto.png" alt="Foto de Monserrath">
+          <div class="about-badge"><i class="fa-solid fa-graduation-cap"></i> Aprendiendo en la UTA</div>
+        </div>
+        <div class="about-copy reveal delay-1">
+          <span class="eyebrow"><i class="fa-regular fa-user"></i> Un poco sobre mí</span>
+          <h3>Aprender, experimentar y crecer.</h3>
+          <p>
+            Soy Monse Medina, estudiante de cuarto semestre de Ingeniería en Software
+            en la Universidad Técnica de Ambato. Me interesa entender cómo funcionan
+            las aplicaciones desde su lógica hasta sus bases de datos. Disfruto
+            practicar, resolver problemas y aprender algo nuevo con cada proyecto.
+          </p>
+          <div class="about-facts">
+            <article class="fact"><i class="fa-solid fa-laptop-code"></i><h4>Lo que hago</h4><p>Practico programación y desarrollo proyectos académicos.</p></article>
+            <article class="fact"><i class="fa-solid fa-rocket"></i><h4>Hacia dónde voy</h4><p>Quiero crecer en desarrollo backend y arquitectura de software.</p></article>
+            <article class="fact"><i class="fa-solid fa-database"></i><h4>Lo que exploro</h4><p>Programación, desarrollo web y bases de datos.</p></article>
+            <article class="fact"><i class="fa-solid fa-lightbulb"></i><h4>Mi mentalidad</h4><p>Aprender paso a paso y mejorar con la práctica.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> Mi caja de herramientas</span>
+          <h2>Tecnologías que estoy <span class="gradient-text">aprendiendo</span></h2>
+          <p>Construyendo mis conocimientos, una tecnología a la vez.</p>
+</div>
+        <div class="tech-grid">
+          <article class="tech-card reveal">
+            <h3><i class="fa-solid fa-terminal"></i> Lenguajes</h3>
+            <div class="tech-items">
+              <span class="tech-item"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="tech-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="tech-item"><i class="fa-brands fa-php"></i> PHP</span>
+            </div>
+          </article>
+
+          <article class="tech-card reveal delay-1">
+            <h3><i class="fa-solid fa-globe"></i> Desarrollo Web & Frameworks</h3>
+            <div class="tech-items">
+              <span class="tech-item"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-item"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-item"><i class="fa-brands fa-react"></i> React</span>
+              <span class="tech-item"><i class="fa-brands fa-node-js"></i> Node.js / Express</span>
+            </div>
+          </article>
+
+          <article class="tech-card reveal delay-2">
+            <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
+            <div class="tech-items">
+              <span class="tech-item"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="tech-item"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="tech-item"><i class="fa-solid fa-server"></i> SQL Server</span>
+              <span class="tech-item"><i class="fa-solid fa-bolt"></i> Supabase</span>
+            </div>
+          </article>
+
+          <article class="tech-card reveal delay-3">
+            <h3><i class="fa-solid fa-network-wired"></i> Redes, Seguridad & DevOps</h3>
+            <div class="tech-items">
+              <span class="tech-item"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="tech-item"><i class="fa-brands fa-linux"></i> Linux (Ubuntu/Debian)</span>
+              <span class="tech-item"><i class="fa-solid fa-shield-halved"></i> OPNsense</span>
+              <span class="tech-item"><i class="fa-solid fa-diagram-project"></i> Cisco Packet Tracer</span>
+              <span class="tech-item"><i class="fa-solid fa-microchip"></i> IoT / LoRaWAN</span>
+            </div>
+          </article>
+
+          <article class="tech-card reveal delay-4">
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas & Entornos</h3>
+            <div class="tech-items">
+              <span class="tech-item"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="tech-item"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="tech-item"><i class="fa-solid fa-code"></i> VS Code</span>
+              <span class="tech-item"><i class="fa-solid fa-cube"></i> NetBeans</span>
+              <span class="tech-item"><i class="fa-solid fa-terminal"></i> Git Bash / SSH</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow"><i class="fa-regular fa-star"></i> Mi trabajo</span>
+          <h2>Proyectos e <span class="gradient-text">ideas</span></h2>
+          <p>Una muestra de lo que voy construyendo y practicando.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top"><div class="project-icon"><i class="fa-solid fa-database"></i></div><span class="project-number">01</span></div>
+            <h3>Prácticas con bases de datos</h3>
+            <p>Ejercicios y proyectos académicos para practicar consultas SQL, organización de información y conexión con aplicaciones.</p>
+            <div class="tags"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Supabase</span></div>
+            <a class="project-link" href="https://github.com/Monse1806" target="_blank" rel="noopener noreferrer">Explorar repositorios <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-top"><div class="project-icon"><i class="fa-solid fa-code"></i></div><span class="project-number">02</span></div>
+            <h3>Programación y lógica</h3>
+            <p>Ejercicios y pequeños proyectos para fortalecer el pensamiento lógico, practicar estructuras de programación y mejorar mis habilidades de desarrollo.</p>
+            <div class="tags"><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">Git</span></div>
+            <a class="project-link" href="https://github.com/Monse1806" target="_blank" rel="noopener noreferrer">Explorar repositorios <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+        <p class="projects-note">Personaliza las tarjetas con los enlaces a los repositorios reales de tus proyectos.</p>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact-box reveal">
+          <span class="eyebrow"><i class="fa-regular fa-paper-plane"></i> Conectemos</span>
+          <h2>¿Tienes una idea? <span class="gradient-text">Hablemos.</span></h2>
+          <p>Siempre hay algo nuevo que aprender y grandes ideas que convertir en proyectos. Estoy abierta a conectar y compartir conocimientos.</p>
+          <a href="mailto:dmedina5341@uta.edu.ec" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> Escríbeme <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Monse Medina · Hecho con <span class="footer-heart">♥</span> y muchas ganas de aprender.</p>
+      <a href="#inicio" class="back-top" aria-label="Volver al inicio"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
