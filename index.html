@@ -99,7 +99,7 @@ button { font:inherit; }
 .fact h4 { font-size:.9rem; margin-bottom:3px; } .fact p { color:var(--muted); font-size:.81rem; line-height:1.6; }
 
 /* Tecnologías */
-.tech-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:17px; }
+.tech-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:17px; }
 .tech-card { padding:25px 17px; border:1px solid var(--border); border-radius:19px; background:linear-gradient(145deg,rgba(10,30,70,.72),rgba(4,14,34,.8)); transition:transform .3s,border-color .3s,box-shadow .3s; }
 .tech-card:hover { transform:translateY(-7px); border-color:rgba(90,169,255,.48); box-shadow:0 15px 40px rgba(15,97,192,.1); }
 .tech-card h3 { display:flex; align-items:center; gap:10px; font-size:.92rem; margin-bottom:22px; }
@@ -137,6 +137,7 @@ footer { border-top:1px solid var(--border); padding:27px 0; color:var(--muted);
 /* Animaciones de entrada */
 .reveal { opacity:0; transform:translateY(25px); transition:opacity .7s ease,transform .7s ease; }
 .reveal.visible { opacity:1; transform:translateY(0); }
+.delay-4 { transition-delay:.4s; }
 .delay-1 { transition-delay:.1s; } .delay-2 { transition-delay:.2s; } .delay-3 { transition-delay:.3s; }
 @media (prefers-reduced-motion:reduce) {
   *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
@@ -231,7 +232,11 @@ footer { border-top:1px solid var(--border); padding:27px 0; color:var(--muted);
     <section class="section" id="sobre-mi">
       <div class="container about-grid">
         <div class="about-visual reveal">
-          <img class="about-image" src="img/mi-foto.png" alt="Foto de Monserrath">
+          <div class="about-image" role="img" aria-label="Ilustración anime de una estudiante programando"></div>
+          <figure class="about-photo">
+            <img src="mi-foto.png" alt="Foto de Monserrath" onerror="this.style.display='none'">
+            <span class="photo-placeholder"><i class="fa-regular fa-user"></i><small>Aquí va tu foto</small></span>
+          </figure>
           <div class="about-badge"><i class="fa-solid fa-graduation-cap"></i> Aprendiendo en la UTA</div>
         </div>
         <div class="about-copy reveal delay-1">
@@ -253,13 +258,13 @@ footer { border-top:1px solid var(--border); padding:27px 0; color:var(--muted);
       </div>
     </section>
 
-  <section class="section" id="tecnologias">
+    <section class="section" id="tecnologias">
       <div class="container">
         <div class="section-heading reveal">
           <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> Mi caja de herramientas</span>
           <h2>Tecnologías que estoy <span class="gradient-text">aprendiendo</span></h2>
           <p>Construyendo mis conocimientos, una tecnología a la vez.</p>
-</div>
+        </div>
         <div class="tech-grid">
           <article class="tech-card reveal">
             <h3><i class="fa-solid fa-terminal"></i> Lenguajes</h3>
@@ -271,7 +276,7 @@ footer { border-top:1px solid var(--border); padding:27px 0; color:var(--muted);
           </article>
 
           <article class="tech-card reveal delay-1">
-            <h3><i class="fa-solid fa-globe"></i> Desarrollo Web & Frameworks</h3>
+            <h3><i class="fa-solid fa-globe"></i> Desarrollo Web &amp; Frameworks</h3>
             <div class="tech-items">
               <span class="tech-item"><i class="fa-brands fa-html5"></i> HTML5</span>
               <span class="tech-item"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
@@ -291,7 +296,7 @@ footer { border-top:1px solid var(--border); padding:27px 0; color:var(--muted);
           </article>
 
           <article class="tech-card reveal delay-3">
-            <h3><i class="fa-solid fa-network-wired"></i> Redes, Seguridad & DevOps</h3>
+            <h3><i class="fa-solid fa-network-wired"></i> Redes, Seguridad &amp; DevOps</h3>
             <div class="tech-items">
               <span class="tech-item"><i class="fa-brands fa-docker"></i> Docker</span>
               <span class="tech-item"><i class="fa-brands fa-linux"></i> Linux (Ubuntu/Debian)</span>
@@ -302,7 +307,7 @@ footer { border-top:1px solid var(--border); padding:27px 0; color:var(--muted);
           </article>
 
           <article class="tech-card reveal delay-4">
-            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas & Entornos</h3>
+            <h3><i class="fa-solid fa-screwdriver-wrench"></i> Herramientas &amp; Entornos</h3>
             <div class="tech-items">
               <span class="tech-item"><i class="fa-brands fa-git-alt"></i> Git</span>
               <span class="tech-item"><i class="fa-brands fa-github"></i> GitHub</span>
